@@ -23,3 +23,6 @@ dev = [
     "ruff (>=0.14.6,<0.15.0)",
     "black (>=25.11.0,<26.0.0)"
 ]
+
+[tool.poetry.scripts]
+todo = "to_do_cli.main:main"
