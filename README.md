@@ -16,7 +16,7 @@ A simple Python CLI application to manage your tasks efficiently from the termin
 ## Installation
 
 git clone https://github.com/4thNote0004/todo_cli.git
-cd to-do-cli
+cd todo_cli
 poetry install
 
 ## Usage

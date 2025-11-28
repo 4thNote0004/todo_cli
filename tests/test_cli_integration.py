@@ -3,7 +3,6 @@ import tempfile
 from pathlib import Path
 
 import pytest
-
 import to_do_cli.main as cli_main
 import to_do_cli.storage as storage
 
@@ -51,10 +50,12 @@ def test_cli_update_done(temp_json, capfd):
 
 
 def test_cli_delete(temp_json, capfd):
-    storage.save_tasks([
-        {"title": "A", "done": False},
-        {"title": "B", "done": False},
-    ])
+    storage.save_tasks(
+        [
+            {"title": "A", "done": False},
+            {"title": "B", "done": False},
+        ]
+    )
     run_cli(["delete", "1"], capfd)
     assert storage.load_tasks()[0]["title"] == "B"
 

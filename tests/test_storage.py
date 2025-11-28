@@ -3,7 +3,6 @@ import tempfile
 from pathlib import Path
 
 import pytest
-
 import to_do_cli.storage as storage
 
 

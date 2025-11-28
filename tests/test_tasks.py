@@ -3,7 +3,6 @@ import tempfile
 from pathlib import Path
 
 import pytest
-
 import to_do_cli.storage as storage
 import to_do_cli.tasks as tasks
 
@@ -28,10 +27,12 @@ def test_add_task(temp_json):
 
 
 def test_list_tasks(temp_json, capfd):
-    storage.save_tasks([
-        {"title": "A", "done": False},
-        {"title": "B", "done": True},
-    ])
+    storage.save_tasks(
+        [
+            {"title": "A", "done": False},
+            {"title": "B", "done": True},
+        ]
+    )
     tasks.list_tasks()
     out = capfd.readouterr().out
     assert "1. [✗] A" in out
@@ -67,10 +68,12 @@ def test_update_invalid_index(temp_json, capfd):
 
 
 def test_delete_task(temp_json):
-    storage.save_tasks([
-        {"title": "A", "done": False},
-        {"title": "B", "done": False},
-    ])
+    storage.save_tasks(
+        [
+            {"title": "A", "done": False},
+            {"title": "B", "done": False},
+        ]
+    )
     tasks.delete_task(0)
     assert storage.load_tasks()[0]["title"] == "B"
 

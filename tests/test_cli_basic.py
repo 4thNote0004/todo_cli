@@ -1,5 +1,4 @@
 import pytest
-
 import to_do_cli.parser as parser
 
 

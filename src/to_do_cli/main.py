@@ -4,7 +4,7 @@ from to_do_cli.parser import create_parser
 
 
 def main(argv=None):
-    
+
     if argv is None:
         argv = sys.argv[1:]
 
