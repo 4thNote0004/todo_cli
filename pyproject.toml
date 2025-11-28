@@ -1,7 +1,7 @@
 [project]
 name = "to-do-cli"
 version = "0.1.0"
-description = ""
+description = "A simple command-line To-Do app with CRUD, JSON storage, argparse CLI, and pytest tests."
 authors = [
     {name = "4thNote",email = "4thnote@protonmail.com"}
 ]
