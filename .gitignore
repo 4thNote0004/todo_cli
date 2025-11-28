@@ -1,0 +1,17 @@
+# Python environment
+.venv/
+
+# Byte-compiled / cache files
+__pycache__/
+*.pyc
+
+# Testing caches
+.pytest_cache/
+.ruff_cache/
+
+# VSCode
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
