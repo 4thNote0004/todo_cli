@@ -15,31 +15,23 @@ A simple Python CLI application to manage your tasks efficiently from the termin
 
 ## Installation
 
-```bash
-# Clone the repository
 git clone https://github.com/4thNote0004/todo_cli.git
 cd to-do-cli
-
-# Install dependencies
 poetry install
 
+## Usage
 
-# Add tasks
+# Run the CLI
 poetry run todo add "Buy milk"
-poetry run todo add "Send email"
-
-# List tasks
 poetry run todo list
-
-# Update tasks
-poetry run todo update 2 --title "Send email reminder" --done
-poetry run todo update 1 --undone
-
-# Delete tasks
+poetry run todo update 1 --title "Buy bread" --done
 poetry run todo delete 1
 
-# Final list
-poetry run todo list
+## Testing
 
-# Run all tests to make sure everything works
+# Run all tests
 poetry run pytest -v
+
+## License
+MIT License
+
