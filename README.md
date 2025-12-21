@@ -15,23 +15,24 @@ A simple Python CLI application to manage your tasks efficiently from the termin
 
 ## Installation
 
-git clone https://github.com/4thNote0004/todo_cli.git
-cd todo_cli
-poetry install
+- git clone https://github.com/4thNote0004/todo_cli.git
+- cd todo_cli
+- poetry install
 
 ## Usage
 
 # Run the CLI
-poetry run todo add "Buy milk"
-poetry run todo list
-poetry run todo update 1 --title "Buy bread" --done
-poetry run todo delete 1
+- poetry run todo add "Buy milk"
+- poetry run todo list
+- poetry run todo update 1 --title "Buy bread" --done
+- poetry run todo delete 1
 
 ## Testing
 
 # Run all tests
-poetry run pytest -v
+- poetry run pytest -v
 
 ## License
 MIT License
+
 
